@@ -1,0 +1,109 @@
+.App {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/imagen-nube/nubes_al_100.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    width: 100%;
+    padding: 2.5em 1.5em;
+    max-width: 450px;
+    border: 1px solid rgba(176, 176, 176, 0.458);
+    border-radius: 10px;
+    background-color: rgba(127, 126, 128, 0.263);
+}
+
+.card_img {
+    width: 100%;
+} 
+
+.card_title {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: rgba(0, 34, 255, 0.608);
+}
+
+.card_country {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    color: rgba(0, 34, 255, 0.608);
+}
+
+.car_body {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    align-items: center;
+    gap:0.5em;
+    margin-bottom: 1em;
+}
+
+.card_info_title {
+    text-align: center;
+    margin-bottom: 0.8em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.card_name {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgba(0, 34, 255, 0.608);
+}
+
+.card_info_list {
+    display: grid;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card_info_item {
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    font-weight: 550;
+}
+
+.card_info_label {
+    font-weight: 700; 
+    color: rgb(0, 34, 255);
+}
+
+ .card_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+} 
+
+.card_ambient {
+    margin-bottom: 1rem;
+} 
+
+.card_btn {
+    font-size: 0.9rem;
+    padding: 0.7em 1.5em;
+    border-radius: 0.3rem;
+    box-shadow: 0.2em 0.2em 0.7em;
+    transition: filter 100ms ease, transform 100ms ease;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgb(0, 34, 255);
+}
+
+.card_btn:hover {
+    filter: brightness(0.95);
+    transform: scale(1.05);
+}

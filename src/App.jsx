@@ -9,6 +9,7 @@ function App() {
   const [weather, setWeather] = useState()
   const [temperature, setTemperature] = useState()
   const [isLoading, setIsLoading] = useState(true)
+  const [inputValue, setInputValue] = useState('')
 
   useEffect(() => {
 
@@ -20,7 +21,7 @@ function App() {
       setCoords(obj)
     }
     navigator.geolocation.getCurrentPosition(success)
-  }, [])
+  }, [inputValue])
 
   useEffect(() => {
     if(coords){
@@ -41,9 +42,21 @@ function App() {
     }
   }, [coords])
 
+
+    const handleSubmit = e => {
+      e.preventDefault()
+      setInputValue(e.target.nameWea.value)
+    }
+
+    console.log(inputValue)
+
   return (
     
     <div className="App">
+      {/* <form onSubmit={handleSubmit}>
+        <input id='nameWea' type="text" />
+        <button>Search</button>
+      </form> */}
         {
           isLoading ?
           <h1>Loading...</h1>
